@@ -1,14 +1,17 @@
 interface IQuadrado {
     ehArredondado: boolean
-    ehAzul?: boolean
-    // width: string
-    // height: string
+    width: string
+    height: string
 }
 
-export function Quadrado({ ehArredondado = false, ehAzul }: IQuadrado) {
+export function Quadrado({ ehArredondado, width = `w-25`, height = `h-25`}: IQuadrado) {
     return (
         <>
-            <div className={`${ehAzul === true ? "bg-blue-400" : "bg-black"} w-[100px] h-[100px] text-zinc-50 ${ehArredondado === true ? 'rounded-2xl' : ''}`}>Teste</div>
+            <div className={`
+            ${ehArredondado === true ? 'rounded-2xl' : ''}
+            ${width}
+            ${height}
+            text-zinc-50 bg-black`}>Teste</div>
         </>
     )
 }

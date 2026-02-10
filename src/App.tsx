@@ -142,13 +142,8 @@ export function App() {
             </button>
           </div>
 
-          <Quadrado />
-          <Quadrado ehArredondado ehAzul />
-          <Quadrado />
-          <Quadrado ehArredondado ehAzul />
-          <Quadrado />
-          <Quadrado ehArredondado ehAzul />
-          <Quadrado />
+          <Quadrado ehArredondado width="w-[px]" height="h-[50px]"/>
+          <Quadrado ehArredondado width="" height=""/>
         </form>
       </div>
     </>
