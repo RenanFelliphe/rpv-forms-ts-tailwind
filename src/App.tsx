@@ -142,8 +142,15 @@ export function App() {
             </button>
           </div>
 
-          <Quadrado ehArredondado width="w-[px]" height="h-[50px]"/>
-          <Quadrado ehArredondado width="" height=""/>
+          <Quadrado className="p-10 bg-amber-300 text-cyan-900">
+            <>
+              <h1 className="font-black font-bold">Daniel</h1>
+              <h2>Daniel</h2>
+            </>
+          </Quadrado>
+          {/* <Quadrado className="bg-red-300 rounded-lg" />
+          <Quadrado className="text-cyan-500" />
+          <Quadrado className="rounded-xl bg-amber-100 text-zinc-700" /> */}
         </form>
       </div>
     </>
